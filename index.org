@@ -1,0 +1,82 @@
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:{} arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:nil
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
+#+title: Kitty Configuration
+#+date: <2025-09-17 Wed>
+#+author: Kristian Alexander P
+#+email: alexforsale@yahoo.com
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 30.2 (Org mode 9.7.11)
+#+cite_export:
+#+HTML_HEAD: <style> #content{max-width:1800px;}</style>
+#+HTML_HEAD: <style> p{max-width:800px;}</style>
+#+HTML_HEAD: <style> li{max-width:800px;}</style>
+* kitty
+:PROPERTIES:
+:header-args: :tangle .config/kitty/kitty.conf :mkdirp t
+:END:
+
+#+begin_src conf
+  include ./nord.conf
+  # Font
+  font_family      JetBrains Mono Nerd Font
+  font_size 8.0
+
+  # Cursor
+  cursor_shape beam
+  cursor_trail 1
+#+end_src
+* nord-theme
+:PROPERTIES:
+:header-args: :tangle .config/kitty/nord.conf :mkdirp t
+:END:
+#+begin_src conf
+  # Nord Colorscheme for Kitty
+  # Based on:
+  # - https://gist.github.com/marcusramberg/64010234c95a93d953e8c79fdaf94192
+  # - https://github.com/arcticicestudio/nord-hyper
+
+  foreground            #D8DEE9
+  background            #2E3440
+  selection_foreground  #000000
+  selection_background  #FFFACD
+  url_color             #0087BD
+  cursor                #81A1C1
+
+  # black
+  color0   #3B4252
+  color8   #4C566A
+
+  # red
+  color1   #BF616A
+  color9   #BF616A
+
+  # green
+  color2   #A3BE8C
+  color10  #A3BE8C
+
+  # yellow
+  color3   #EBCB8B
+  color11  #EBCB8B
+
+  # blue
+  color4  #81A1C1
+  color12 #81A1C1
+
+  # magenta
+  color5   #B48EAD
+  color13  #B48EAD
+
+  # cyan
+  color6   #88C0D0
+  color14  #8FBCBB
+
+  # white
+  color7   #E5E9F0
+  color15  #ECEFF4
+
+#+end_src
