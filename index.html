@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-09-17 Wed 15:12 -->
+<!-- 2025-09-17 Wed 15:26 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kitty Configuration</title>
@@ -204,20 +204,25 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org0311b59">kitty</a></li>
-<li><a href="#org3db6599">nord-theme</a></li>
+<li><a href="#org72c56a8">kitty</a></li>
+<li><a href="#org9d7bd40">nord-theme</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org0311b59" class="outline-2">
-<h2 id="org0311b59">kitty</h2>
-<div class="outline-text-2" id="text-org0311b59">
+<div id="outline-container-org72c56a8" class="outline-2">
+<h2 id="org72c56a8">kitty</h2>
+<div class="outline-text-2" id="text-org72c56a8">
 <div class="org-src-container">
 <pre class="src src-conf">include ./nord.conf
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Font
 </span>font_family      JetBrains Mono Nerd Font
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
 font_size 8.0
 
+<span style="color: #b8860b;">disable_ligatures</span> = cursor
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Cursor
 </span>cursor_shape beam
 cursor_trail 1
@@ -225,9 +230,9 @@ cursor_trail 1
 </div>
 </div>
 </div>
-<div id="outline-container-org3db6599" class="outline-2">
-<h2 id="org3db6599">nord-theme</h2>
-<div class="outline-text-2" id="text-org3db6599">
+<div id="outline-container-org9d7bd40" class="outline-2">
+<h2 id="org9d7bd40">nord-theme</h2>
+<div class="outline-text-2" id="text-org9d7bd40">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Nord Colorscheme for Kitty
 </span><span style="color: #b22222;"># </span><span style="color: #b22222;">Based on:
@@ -281,7 +286,7 @@ foreground            <span style="color: #b22222;">#</span><span style="color: 
 <div id="postamble" class="status">
 <p class="date">Date: 2025-09-17 Wed 00:00</p>
 <p class="author">Author: Kristian Alexander P</p>
-<p class="date">Created: 2025-09-17 Wed 15:12</p>
+<p class="date">Created: 2025-09-17 Wed 15:26</p>
 </div>
 </body>
 </html>
